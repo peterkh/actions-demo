@@ -6,8 +6,7 @@ permissions:
 
 jobs:
   build-and-deploy:
-    env:
-      name: production
+    environment: production
     runs-on: ubuntu-latest
     steps:
 
