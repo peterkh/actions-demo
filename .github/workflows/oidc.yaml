@@ -29,3 +29,7 @@ jobs:
         client-id: ${{ secrets.AZURE_CLIENTID }}
         tenant-id: ${{ secrets.AZURE_TENANTID }}
         subscription-id: ${{ secrets.AZURE_SUBSCRIPTIONID }}
+
+    - name: 'List container'
+      run: |
+        az storage blob list --container-name data --account-name azenixghdemo --auth-mode login -o table
